@@ -11,7 +11,7 @@
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
   
-  <p align="center">Um projeto desenvolvido com <a href="http://nodejs.org" target="blank">Nest.js framework</a> </p>
+  <p align="center">Um projeto desenvolvido com <a href="https://nestjs.com/" target="blank">Nest.js framework</a> </p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>

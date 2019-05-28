@@ -16,9 +16,9 @@ lerna-debug.log*
 # Tests
 /coverage
 /.nyc_output
- .scannerwork
- .env
- .sonarlint
+.scannerwork
+.env
+.sonarlint
 
 # IDEs and editors
 /.idea
