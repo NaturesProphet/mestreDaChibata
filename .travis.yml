@@ -11,11 +11,11 @@ dist: trusty
 #      secure: "$SONAR_TOKEN"
 script:
 # instalar dependências
-- npm install
+#- npm install
 # executar os testes
-- npm run test
-- npm run test:e2e
-- npm run test:cov
+# - npm run test
+# - npm run test:e2e
+# - npm run test:cov
 # análise de qualidade de código
 # - sonar-scanner
 # - node sonarBreaker.js
