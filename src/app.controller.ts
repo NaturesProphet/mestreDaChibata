@@ -13,6 +13,7 @@ export class AppController {
 
   @Post( 'teste' )
   getMsg ( @Res() res, @Body() body ) {
+    res.status( 200 ).send( body );
     notifySlack( JSON.stringify( body ), 'parrot' );
   }
 }
