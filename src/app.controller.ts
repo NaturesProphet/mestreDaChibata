@@ -17,7 +17,7 @@ export class AppController {
     //console.log( body );
     console.log( `----------------------\nTipo: ${body.event.type}\n----------------` );
     res.status( 200 ).send( body );
-    //notifySlack( JSON.stringify( body ) );
+    notifySlack( '@mestredachibata haha' );
     postMsgToSlack( 'Mandou me chamar?' );
   }
 }
