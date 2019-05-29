@@ -14,10 +14,10 @@ export class AppController {
 
   @Post( 'teste' )
   getMsg ( @Res() res, @Body() body ) {
-    console.log( body );
+    //console.log( body );
     console.log( `----------------------\nTipo: ${body.event.type}\n----------------` );
     res.status( 200 ).send( body );
-    notifySlack( JSON.stringify( body ) );
-    //postMsgToSlack( 'Mandou me chamar?' );
+    //notifySlack( JSON.stringify( body ) );
+    postMsgToSlack( 'Mandou me chamar?' );
   }
 }
