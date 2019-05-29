@@ -7,42 +7,17 @@ Modulo que envia notificações ao slack e printa informações no terminal
 */
 import * as request from 'request-promise';
 import { slackChannel, slackWebHook } from '../../common/configs/slack.config';
+import { icon, botName } from '../../../src/common/configs/botMsg.config';
 
 
 
-export async function notifySlack ( message: string, name: string ): Promise<any> {
-    let icon: string = "";
-    switch ( name ) {
-        case "parrot":
-            icon = ":laptop_parrot:"
-            console.log( `[   OK   ] ${message}` );
-            break;
-        case "Alerta":
-            icon = ":warning:";
-            console.log( `[ Alerta ] ${message}` );
-            break;
-        case "Falha":
-            icon = ":bomb:";
-            console.log( `[ Falha  ] ${message}` );
-            break;
-        case "Nota":
-            icon = ":fuckthatshit:";
-            console.log( `[  Nota  ] ${message}` );
-            break;
-        case "Build":
-            icon = ":build:";
-            console.log( `[  Gerador  ] ${message}` );
-            break;
-        case "Miner":
-            icon = ":miner:";
-            console.log( `[  Miner  ] ${message}` );
-            break;
-    }
+export async function notifySlack ( message: string ): Promise<any> {
+
 
     const payload = {
         "channel": slackChannel,
         "icon_emoji": icon,
-        "username": name,
+        "username": botName,
         "text": message
     }
 

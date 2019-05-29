@@ -9,6 +9,7 @@
     "url": "https://github.com/NaturesProphet/mestreDaChibata.git"
   },
   "scripts": {
+    "heroku:dev": "git push heroku dev:master",
     "clean": "rm -R node_modules",
     "commit": "git-cz",
     "release": "standard-version",

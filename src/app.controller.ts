@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Res, Body } from '@nestjs/common';
 import { AppService } from './app.service';
 import { notifySlack } from './services/slack/notifications';
+import { postMsgToSlack } from './services/rest/postMsgs.service';
 
 @Controller()
 export class AppController {
@@ -14,6 +15,7 @@ export class AppController {
   @Post( 'teste' )
   getMsg ( @Res() res, @Body() body ) {
     res.status( 200 ).send( body );
-    notifySlack( JSON.stringify( body ), 'parrot' );
+    notifySlack( JSON.stringify( body ) );
+    postMsgToSlack( 'Mandou me chamar?' );
   }
 }
