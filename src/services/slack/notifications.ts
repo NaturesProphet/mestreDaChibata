@@ -7,7 +7,7 @@ Modulo que envia notificações ao slack e printa informações no terminal
 */
 import * as request from 'request-promise';
 import { slackChannel, slackWebHook } from '../../common/configs/slack.config';
-import { icon, botName } from '../../../src/common/configs/botMsg.config';
+import { icon, botName } from '../../common/configs/botMsg.config';
 
 
 

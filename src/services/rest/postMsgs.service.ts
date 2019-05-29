@@ -4,8 +4,8 @@ if ( process.env.NODE_ENV != 'production' ) {
 }
 
 import * as request from 'request-promise';
-import { slackChannel } from '../../../src/common/configs/slack.config';
-import { botMessageToken } from '../../../src/common/configs/botMsg.config';
+import { slackChannel } from '../../common/configs/slack.config';
+import { botMessageToken } from '../../common/configs/botMsg.config';
 
 export async function postMsgToSlack ( message: string ): Promise<any> {
 
