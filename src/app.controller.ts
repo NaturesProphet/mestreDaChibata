@@ -14,8 +14,9 @@ export class AppController {
 
   @Post( 'teste' )
   getMsg ( @Res() res, @Body() body ) {
+    console.log( body );
     res.status( 200 ).send( body );
     notifySlack( JSON.stringify( body ) );
-    postMsgToSlack( 'Mandou me chamar?' );
+    //postMsgToSlack( 'Mandou me chamar?' );
   }
 }
